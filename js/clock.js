@@ -39,6 +39,7 @@ let clock = () => {
     hrs = hrs < 10 ? "0" + hrs : hrs;
     mins = mins < 10 ? "0" + mins : mins;
     secs = secs < 10 ? "0" + secs : secs;
+    days = days < 10 ? "0" + days : days;
 
     let time = `${hrs}:${mins}:${secs}:${days}`;
     document.getElementById("myClock").innerText = time;
