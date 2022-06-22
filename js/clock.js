@@ -41,7 +41,7 @@ let clock = () => {
     secs = secs < 10 ? "0" + secs : secs;
     days = days < 10 ? "0" + days : days;
 
-    let time = `${hrs}:${mins}:${secs}:${days}`;
+    let time = `${hrs}:${mins}:${secs} ${days}`;
     document.getElementById("myClock").innerText = time;
     setTimeout(clock, 1000);
 };
